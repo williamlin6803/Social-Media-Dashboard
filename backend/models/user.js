@@ -5,12 +5,6 @@ const { Schema } = mongoose;
 
 // UserSchema, which specifies the structure and configuration for the user collection in MongoDB.
 const userSchema = new Schema({
-    username: {
-        type: String,
-        required: true,
-        unique: true
-    },
-
     email: {
         type: String,
         required: true,
