@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// Establish connection with MongoDB Atlas database
 const connectDatabase = () => {
     mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
@@ -10,4 +11,5 @@ const connectDatabase = () => {
     });
 };
 
+// Export the connectDatabase function to be used in other files
 module.exports = connectDatabase;
