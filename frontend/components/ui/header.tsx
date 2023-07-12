@@ -3,8 +3,6 @@
 import { useState, useEffect } from 'react'
 
 import Link from 'next/link'
-import Logo from './logo'
-import Dropdown from '@/components/utils/dropdown'
 import MobileMenu from './mobile-menu'
 
 export default function Header() {
@@ -36,11 +34,11 @@ export default function Header() {
             {/* Desktop sign in links */}
             <ul className="bg-gray-901 grow rounded-full flex justify-center flex-wrap items-center">
               <li>
-                <Link href="/signin" className="font-medium text-gray-400 hover:text-gray-200 h-14 w-20 justify-center items-center flex transition duration-150 ease-in-out">support</Link>
+                <Link href="#0" className="font-medium text-gray-400 hover:text-gray-200 h-14 w-20 justify-center items-center flex transition duration-150 ease-in-out">support</Link>
               </li>
-              <li className='font-semibold text-2xl text-orange-100 w-32 text-center'>smdash</li>
+              <li className='w-32 text-center'><Link href="/" className="font-semibold text-2xl text-orange-100">smdash</Link></li>
               <li>
-                <Link href="/signup" className="font-medium text-gray-400 hover:text-gray-200 h-14 w-20 justify-center items-center flex transition duration-150 ease-in-out">login</Link>
+                <Link href="/signin" className="font-medium text-gray-400 hover:text-gray-200 h-14 w-20 justify-center items-center flex transition duration-150 ease-in-out">login</Link>
               </li>
             </ul>
 
