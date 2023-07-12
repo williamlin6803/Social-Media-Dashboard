@@ -11,14 +11,6 @@ connectDatabase();
 
 app.use(express.json());
 
-// Callback function to print the user data
-const printUserData = (user) => {
-    console.log('User created:', user);
-};
-
-userController.createUser(printUserData); // Pass the callback function to createUser
-
-
 app.get('/users/:email', userDatabase.findUserByEmail);
 
 app.listen(PORT, () => {
