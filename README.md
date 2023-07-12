@@ -10,4 +10,6 @@ RoadMap:
 
 July 1 - July 10: Project planning and discussion
 
-July 9 - July 15: Integrating Social Media APIs into our application and setting up database using MangoDB
+July 11: Integrating Social Media APIs into our application and setting up database using MangoDB
+
+July 12: Connect Frontend with Backend. Setting up sign in page to connect with MangoDB and adding new designs to the webpage.

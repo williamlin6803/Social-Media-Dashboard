@@ -1,3 +1,5 @@
+const axios = require('axios');
+
 export const metadata = {
   title: 'Sign Up | smdash',
   description: 'Page description',
