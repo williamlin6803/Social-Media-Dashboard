@@ -24,11 +24,6 @@ export default function Header() {
     <header>
       <div className="max-w-md mx-auto px-5 sm:px-6">
         <div className="flex items-center justify-between h-14 md:h-32">
-          {/* Site branding */}
-          {/* <div className="shrink-0 mr-4">
-            <Logo />
-          </div> */}
-
           {/* Desktop navigation */}
           <nav className="leading-loose hidden md:flex md:grow">
             {/* Desktop sign in links */}

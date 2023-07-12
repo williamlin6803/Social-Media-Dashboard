@@ -120,11 +120,15 @@ module.exports = {
       },
       animation: {
         float: 'float 3s ease-in-out infinite',
+        shine: "shine 1s",
       },
       keyframes: {
         float: {
           '0%, 100%': { transform: 'translateY(0)', },
           '50%': { transform: 'translateY(-5%)', },
+        },
+        shine: {
+            "100%": { left: "125%" },
         },
       },
       zIndex: {

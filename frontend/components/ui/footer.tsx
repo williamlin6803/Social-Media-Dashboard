@@ -1,5 +1,3 @@
-import Logo from './logo'
-
 export default function Footer() {
   return (
     <footer>
@@ -10,9 +8,6 @@ export default function Footer() {
 
           {/* 1st block */}
           <div className="sm:col-span-12 lg:col-span-3">
-            <div className="mb-2">
-              <Logo />
-            </div>
             <div className="text-sm text-gray-600">
               <a href="#0" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</a> · <a href="#0" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</a>
             </div>
