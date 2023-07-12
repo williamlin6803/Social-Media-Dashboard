@@ -21,13 +21,13 @@ export default function Header() {
   }, [top])
 
   return (
-    <header>
+    <header className='bg-gray-901'>
       <div className="max-w-md mx-auto px-5 sm:px-6">
         <div className="flex items-center justify-between h-14 md:h-32">
           {/* Desktop navigation */}
           <nav className="leading-loose hidden md:flex md:grow">
             {/* Desktop sign in links */}
-            <ul className="bg-gray-901 grow rounded-full flex justify-center flex-wrap items-center">
+            <ul className="bg-gray-902 grow rounded-full flex justify-center flex-wrap items-center">
               <li>
                 <Link href="#0" className="font-medium text-gray-400 hover:text-gray-200 h-14 w-20 justify-center items-center flex transition duration-150 ease-in-out">support</Link>
               </li>
