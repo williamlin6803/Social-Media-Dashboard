@@ -1,6 +1,9 @@
 # Social-Media-Dashboard
 
-Created by William Lin and Tevin Zhuo
+Contributions:
+
+William Lin -> Backend and bit of Frontend
+Tevin Zhuo -> Frontend and bit of Backend
 
 RoadMap: 
 
