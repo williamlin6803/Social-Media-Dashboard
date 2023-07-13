@@ -1,0 +1,4 @@
+frontend/signup/page.tsx
+
+Error: You're importing a component that needs useState. It only works in a Client Component, but none of its parents are marked with "use client"
+Fix: https://stackoverflow.com/questions/74965849/youre-importing-a-component-that-needs-usestate-it-only-works-in-a-client-comp
