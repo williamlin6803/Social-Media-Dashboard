@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 const axios = require('axios');
 
 export const metadata = {
-  title: 'Sign Up - Simple',
+  title: 'Sign Up | smdash',
   description: 'Page description',
 };
 
@@ -95,6 +95,7 @@ export default function SignUp() {
                 By creating an account, you agree to the <a className="underline" href="#0">terms & conditions</a>, and our <a className="underline" href="#0">privacy policy</a>.
               </div>
             </form>
+
             <div className="text-gray-600 text-center mt-6">
               Already using smdash? <Link href="/signin" className="text-orange-100 hover:underline transition duration-150 ease-in-out">Sign in</Link>
             </div>
