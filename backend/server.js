@@ -7,14 +7,16 @@ const PORT = process.env.PORT || 4000;
 const connectDatabase = require('./database');
 const userController = require('./controllers/user_controller');
 const userDatabase = require('./testuserdatabase');
+const userRoutes = require('./routes/user_routes');
 
 connectDatabase();
 // Enable CORS on all routes
 app.use(cors());
 app.use(express.json());
+app.use(userRoutes);
 
-app.get('/users/:email', userDatabase.findUserByEmail);
-app.post('/signup', userController.signUp);
+// app.get('/signin', userDatabase.findUserByEmail);
+// app.post('/signup', userController.signUp);
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);

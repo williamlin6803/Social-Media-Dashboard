@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const User = require('./models/user_model');
+const User = require('../models/user_model');
 
 // Route to create a new user and save it to the database
 router.post('/signup', (req, res) => {
@@ -23,16 +23,22 @@ router.post('/signup', (req, res) => {
         });
 });
 
-// Route to retrieve all users from the database
-router.get('/', (req, res) => {
-    User.find()
-        .then((users) => {
-            console.log('Users retrieved:', users);
-            res.status(200).json(users);
+// Route to check if user exists with the given email and password
+router.post('/signin', (req, res) => {
+    const { email, password } = req.body;
+    User.findOne({ email, password })  
+        .then((user) => {
+            if (user) {
+                console.log('User signed in:', user);
+                res.status(200).json(user);
+            } else {
+                console.error('Sign in failed:', { email, password });
+                res.status(400).json({ error: 'Email or password is incorrect' });
+            }
         })
         .catch((error) => {
-            console.error('Error retrieving users:', error);
-            res.status(500).json({ error: 'Failed to retrieve users' });
+            console.error('Error signing in:', error);
+            res.status(500).json({ error: 'Failed to sign in' });
         });
 });
 

@@ -1,11 +1,32 @@
-export const metadata = {
-  title: 'Sign In | smdash',
-  description: 'Page description',
-}
+"use client";
 
+import React from 'react';
+import axios from 'axios';
 import Link from 'next/link'
 
+
 export default function SignIn() {
+  const [signinMessage, setSigninMessage] = React.useState('');
+  // Handle sign in form submission, which is invoked when the sign in button is clicked
+  const handleSignIn = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const email = (e.currentTarget.elements.namedItem('email') as HTMLInputElement)?.value;
+    const password = (e.currentTarget.elements.namedItem('password') as HTMLInputElement)?.value;
+
+    // Sends POST HTTP request to /signin route in the backend with email and password
+    try {
+      const response = await axios.post('http://localhost:4000/signin', { email, password });
+      console.log(response.data);
+      console.log(response.data);
+      setSigninMessage('Sign up successful!'); // Display a success message
+      // TODO: Redirect the user to the homepage or dashboard
+    } catch (error) {
+      console.error(error);
+      // TODO: Show an error message to the user
+      setSigninMessage('Sign up failed. Please try again.'); // Display an error message
+    }
+  };
+
   return (
     <section className="bg-gradient-to-b from-gray-900 to-gray-901">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -18,7 +39,7 @@ export default function SignIn() {
 
           {/* Form */}
           <div className="max-w-sm mx-auto">
-            <form>
+            <form onSubmit={handleSignIn}>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full px-3">
                   <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="email">Email</label>
@@ -46,10 +67,15 @@ export default function SignIn() {
               </div>
               <div className="flex flex-wrap -mx-3 mt-6">
                 <div className="w-full px-3">
-                  <button className="btn text-white bg-orange-100 w-full">Sign in</button>
+                  <button type="submit" className="btn text-white bg-orange-100 w-full">Sign in</button>
                 </div>
               </div>
             </form>
+            {signinMessage && (
+              <div className="text-white text-center mt-4">
+                {signinMessage}
+              </div>
+            )}
             <div className="text-gray-600 text-center mt-6">
               Don't you have an account? <Link href="/signup" className="text-orange-100 hover:underline transition duration-150 ease-in-out">Sign up</Link>
             </div>
@@ -58,5 +84,5 @@ export default function SignIn() {
         </div>
       </div>
     </section>
-  )
+  );
 }
