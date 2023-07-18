@@ -31,7 +31,7 @@ export default function Hero() {
             </h1>
             <div className="max-w-3xl mx-auto">
               <p className="text-2xl text-gray-400 font-bold mb-8" data-aos="zoom-y-out" data-aos-delay="150">
-                Keep up with <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">Messages.</span></p>
+                Keep up with <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-101 to-orange-100">Messages.</span></p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
                   <a className="btn text-white bg-orange-100 hover:text-gray-400 w-full mb-4 sm:w-auto sm:mb-0" href="/signup">Sign up</a>

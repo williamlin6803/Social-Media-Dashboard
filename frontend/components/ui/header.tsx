@@ -31,7 +31,7 @@ export default function Header() {
               <li>
                 <Link href="#0" className="font-medium text-gray-400 hover:text-gray-200 h-14 w-20 justify-center items-center flex transition duration-150 ease-in-out">support</Link>
               </li>
-              <li className='w-32 text-center'><Link href="/" className="font-semibold text-2xl text-orange-100">smdash</Link></li>
+              <li className='w-32 text-center'><Link href="/"><span className="font-semibold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-orange-101 to-orange-100">smdash</span></Link></li>
               <li>
                 <Link href="/signin" className="font-medium text-gray-400 hover:text-gray-200 h-14 w-20 justify-center items-center flex transition duration-150 ease-in-out">login</Link>
               </li>

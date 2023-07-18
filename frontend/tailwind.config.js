@@ -45,6 +45,7 @@ module.exports = {
         },
         orange: {
             100: '#FF2E00',
+            101: '#FFAC1C',
         }
       },
       boxShadow: {
