@@ -1,5 +1,5 @@
 export const metadata = {
-    title: 'Sign In | smdash',
+    title: 'Dashboard | smdash',
     description: 'Page description',
   }
   
