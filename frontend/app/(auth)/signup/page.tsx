@@ -36,6 +36,9 @@ export default function SignUp() {
       // Handle successful signup response (e.g., show success message)
       console.log(response.data);
       setSignupMessage('Sign up successful!'); // Display a success message
+      setTimeout(() => {
+        window.location.href = '/dashboard'; // Redirect to the desired page after a delay
+      }, 2000); // Adjust the delay as needed
     } catch (error) {
       // Handle signup error (e.g., show error message)
       console.error(error);
@@ -52,7 +55,7 @@ export default function SignUp() {
             <h1 className="h1">Sign up</h1>
           </div>
           <div className="max-w-sm mx-auto">
-            <form onSubmit={handleSignUp}>
+            <form onSubmit={(handleSignUp)}>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full px-3">
                   <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="name">Name <span className="text-red-600">*</span></label>
