@@ -26,15 +26,13 @@ export default function SignUp() {
   // Handle sign up form submission, which is invoked when the signup button is called: <form onSubmit={handleSignUp}>
   const handleSignUp = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     // Sends POST HTTP request to /signup route in the backend with name, email, and password
     try {
-      const response = await axios.post('http://localhost:3000/signup', {
+      const response = await axios.post('http://localhost:4000/signup', {
         name,
         email,
         password,
       });
-
       // Handle successful signup response (e.g., show success message)
       console.log(response.data);
       setSignupMessage('Sign up successful!'); // Display a success message
@@ -53,7 +51,6 @@ export default function SignUp() {
           <div className="max-w-2xl mx-auto text-orange-100 text-center pb-6 md:pb-6">
             <h1 className="h1">Sign up</h1>
           </div>
-
           <div className="max-w-sm mx-auto">
             <form onSubmit={handleSignUp}>
               <div className="flex flex-wrap -mx-3 mb-4">

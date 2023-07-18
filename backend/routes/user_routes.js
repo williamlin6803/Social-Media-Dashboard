@@ -4,10 +4,10 @@ const User = require('./models/user_model');
 
 // Route to create a new user and save it to the database
 router.post('/signup', (req, res) => {
-    const { username, email, password } = req.body;
+    const { name, email, password } = req.body;
 
     const newUser = new User({
-        username,
+        name,
         email,
         password
     });

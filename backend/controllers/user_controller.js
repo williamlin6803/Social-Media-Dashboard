@@ -2,6 +2,7 @@ const User = require('../models/user_model');
 
 // creates User object based on request from client
 exports.signUp = (req, res) => {
+    console.log(req.body);
     const { name, email, password } = req.body;
 
     const newUser = new User({
