@@ -12,7 +12,9 @@ connectDatabase();
 app.use(express.json());
 
 app.get('/users/:email', userDatabase.findUserByEmail);
+app.post('/signup', userController.signUp);
+
 
 app.listen(PORT, () => {
-    console.log('Server running on port ${PORT}');
+    console.log(`Server running on port ${PORT}`);
 });

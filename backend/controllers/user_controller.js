@@ -1,7 +1,7 @@
 const User = require('../models/user_model');
 
 // creates User object based on request from client
-exports.createUser = (req, res) => {
+exports.signUp = (req, res) => {
     const { name, email, password } = req.body;
 
     const newUser = new User({
@@ -14,7 +14,7 @@ exports.createUser = (req, res) => {
     newUser.save()
         .then((savedUser) => {
             // Sends successful HTTP request to the client
-            res.status(201).json(newUser);
+            res.status(201).json(savedUser);
         })
         .catch(err => {
             // Sends error HTTP request to the client

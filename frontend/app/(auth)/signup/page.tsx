@@ -10,10 +10,10 @@
 import React, { useState } from 'react';
 const axios = require('axios');
 
-export const metadata = {
-  title: 'Sign Up | smdash',
-  description: 'Page description',
-};
+// export const metadata = {
+//   title: 'Sign Up | smdash',
+//   description: 'Page description',
+// };
 
 import Link from 'next/link';
 
@@ -29,7 +29,7 @@ export default function SignUp() {
 
     // Sends POST HTTP request to /signup route in the backend with name, email, and password
     try {
-      const response = await axios.post('/signup', {
+      const response = await axios.post('http://localhost:3000/signup', {
         name,
         email,
         password,
