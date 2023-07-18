@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* Top area: Blocks */}
-        <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-902">
+        <div className="grid items-center sm:grid-cols-5 gap-8 py-8 md:py-12 border-t border-gray-902">
 
           {/* 1st block */}
           <div className="sm:col-span-12 lg:col-span-3">
@@ -36,7 +36,7 @@ export default function Footer() {
           </div> */}
 
           {/* 3rd block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+          {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h6 className="text-gray-300 font-medium mb-2">Resources</h6>
             <ul className="text-sm">
               <li className="mb-2">
@@ -55,7 +55,7 @@ export default function Footer() {
                 <a href="#0" className="text-gray-200 hover:text-gray-400 transition duration-150 ease-in-out">Partners</a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* 4th block */}
           {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">

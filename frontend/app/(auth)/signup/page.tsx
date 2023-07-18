@@ -58,7 +58,7 @@ export default function SignUp() {
             <form onSubmit={handleSignUp}>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full px-3">
-                  <label className="block text-white text-sm font-medium mb-1" htmlFor="name">Name <span className="text-red-600">*</span></label>
+                  <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="name">Name <span className="text-red-600">*</span></label>
                   <input
                     id="name"
                     type="text"
@@ -72,7 +72,7 @@ export default function SignUp() {
               </div>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full px-3">
-                  <label className="block text-white text-sm font-medium mb-1" htmlFor="email">Email <span className="text-red-600">*</span></label>
+                  <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="email">Email <span className="text-red-600">*</span></label>
                   <input
                     id="email"
                     type="email"
@@ -86,7 +86,7 @@ export default function SignUp() {
               </div>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full px-3">
-                  <label className="block text-white text-sm font-medium mb-1" htmlFor="password">Password <span className="text-red-600">*</span></label>
+                  <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="password">Password <span className="text-red-600">*</span></label>
                   <input
                     id="password"
                     type="password"
@@ -103,7 +103,7 @@ export default function SignUp() {
                   <button className="btn text-white bg-orange-100 w-full" type="submit">Sign up</button>
                 </div>
               </div>
-              <div className="text-sm text-gray-500 text-center mt-3">
+              <div className="text-sm text-gray-400 text-center mt-3">
                 By creating an account, you agree to the <a className="underline" href="#0">terms & conditions</a>, and our <a className="underline" href="#0">privacy policy</a>.
               </div>
             </form>
@@ -114,7 +114,7 @@ export default function SignUp() {
               </div>
             )}
 
-            <div className="text-gray-600 text-center mt-6">
+            <div className="text-gray-300 text-center mt-6">
               Already using smdash? <Link href="/signin" className="text-orange-100 hover:underline transition duration-150 ease-in-out">Sign in</Link>
             </div>
           </div>
