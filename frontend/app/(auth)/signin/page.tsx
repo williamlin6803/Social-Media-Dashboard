@@ -15,7 +15,7 @@ export default function SignIn() {
 
     // Sends POST HTTP request to /signin route in the backend with email and password
     try {
-      const response = await axios.post('http://localhost:4000/signin', { email, password });
+      const response = await axios.post('dash-api-phi.vercel.app/signin', { email, password });
       console.log(response.data);
       console.log(response.data);
       setSigninMessage('Sign up successful!'); // Display a success message
