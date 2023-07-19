@@ -10,7 +10,7 @@ const userRoutes = require('./routes/user_routes');
 
 // Enable CORS on all routes
 app.use(cors({
-    origin: 'https://vercel.com/williamlin6803/social-media-dashboard',
+    origin: 'https://social-media-dashboard-seven-pink.vercel.app/',
     methods: ['POST', 'GET'],
     credentials: true
 }));
