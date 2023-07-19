@@ -2,9 +2,8 @@
 
 Contributions:
 
-William Lin -> Backend and bit of Frontend 
-
-Tevin Zhuo -> Frontend and bit of Backend
+Frontend/Backend
+  - William Lin & Tevin Zhuo
 
 RoadMap: 
 
