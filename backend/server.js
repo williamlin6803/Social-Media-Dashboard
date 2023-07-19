@@ -14,9 +14,14 @@ app.use(cors({
     methods: ['POST', 'GET'],
     credentials: true
 }));
+
 app.use(express.json());
 mongoose.connect('mongodb+srv://williamlin6803:gk0KNs9V9F5zRRFB@cluster0.bmghano.mongodb.net/AllUsers?retryWrites=true&w=majority')
 app.use(userRoutes);
+
+app.get("/", (req, res) => {
+    res.json("Hello");
+)}
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
