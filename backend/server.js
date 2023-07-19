@@ -10,7 +10,7 @@ const userRoutes = require('./routes/user_routes');
 
 // Enable CORS on all routes
 app.use(cors({
-    origin: 'https://creative-croquembouche-4ca9dc.netlify.app',
+    origin: 'https://deploy-mern.vercel.app',
     methods: ['POST', 'GET'],
     credentials: true
 }));
