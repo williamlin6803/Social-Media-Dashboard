@@ -28,7 +28,7 @@ export default function SignUp() {
     e.preventDefault();
     // Sends POST HTTP request to /signup route in the backend with name, email, and password
     try {
-      const response = await axios.post('http://localhost:4000/signup', {
+      const response = await axios.post('dash-api-phi.vercel.app/signup', {
         name,
         email,
         password,
