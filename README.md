@@ -1,5 +1,8 @@
 # Social-Media-Dashboard
 
+link: https://www.socialntw.com/
+
+
 Contributions:
 
 Frontend/Backend
@@ -14,3 +17,5 @@ July 11: Integrating Social Media APIs into our application and setting up datab
 July 12: Connect Frontend with Backend. Setting up sign in page to connect with MangoDB and adding new designs to the webpage.
 
 July 18: Successfully saved user info to database
+
+July 19: Finally deployed
