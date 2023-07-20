@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 3000;
 // Enable CORS on all routes
 app.use(cors(
     {
-        origin: ["https://social-ntw-frontend.vercel.app"],
+        origin: ["https://social-media-dashboard-six-taupe.vercel.app"],
         methods: ['POST', 'GET', 'OPTIONS'],
         credentials: true
     }
