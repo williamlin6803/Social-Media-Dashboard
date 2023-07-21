@@ -16,7 +16,7 @@ export default function SignIn() {
     // Sends POST HTTP request to /signin route in the backend with email and password
     try {
       //https://social-ntw-api.vercel.app
-      const response = await axios.post('https://social-ntw-api.vercel.app/signin', { email, password });
+      const response = await axios.post('https://social-ntw-api-wine.vercel.app/signin', { email, password });
       console.log(response.data);
       console.log(response.data);
       setSigninMessage('Sign in successful!'); // Display a success message
