@@ -11,7 +11,6 @@ const PORT = process.env.PORT || 3000;
 
 (async () => {
     try {
-        console.log('Testing')
         await connectDatabase();
     } catch (error) {
         console.error('Failed to connect to the database', error.message);
@@ -22,7 +21,7 @@ const PORT = process.env.PORT || 3000;
 // Enable CORS on all routes
 app.use(cors(
     {
-        origin: ["https://social-media-dashboard-six-taupe.vercel.app"],
+        origin: ["https://www.socialntw.com"],
         methods: ['POST', 'GET', 'OPTIONS'],
         credentials: true
     }
